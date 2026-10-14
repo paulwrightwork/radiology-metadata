@@ -10,3 +10,5 @@ Anonymisation steps:
   a. `select_id_pref_hn.py` picks an ID for each patient, preferring the hospital number (note the bidsify script prefers NHS number).
   b. `fix_accession.py` removes accession numbers that contain the patient ID and fills in missing accession numbers.
   c. `anonymise_bad_accessions.py` removed a broader range of accession numbers that contain strings resembling patient IDs, as well as any in a manually curated list.
+
+`tags_to_anonymise.py` simply represents the list of hex duples as a dictionary with keywords for readability.
